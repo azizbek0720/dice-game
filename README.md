@@ -1,1 +1,1 @@
-# pig-game
+# dice game
