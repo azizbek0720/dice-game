@@ -57,12 +57,12 @@ function holdRender() {
 }
 
 function checkWinner(...tsElm) {
-  if (tsElm[0].textContent >= 10) {
+  if (tsElm[0].textContent >= 100) {
     isWinner1 = true;
     player1.classList.add("winner");
     player2.classList.remove("active");
     playerNames[0].textContent = "PLAYER 1 Won🏆😏";
-  } else if (tsElm[1].textContent >= 10) {
+  } else if (tsElm[1].textContent >= 100) {
     isWinner2 = true;
     player2.classList.add("winner");
     player1.classList.remove("active");
