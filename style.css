@@ -1,0 +1,154 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 16px;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  background: linear-gradient(to top left, #5a2493 10%, #3c45ff 100%);
+  color: #333;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 62rem;
+  height: 36rem;
+  position: relative;
+  text-align: center;
+  font-family: "Nunito", sans-serif;
+  border: 0px solid;
+  border-radius: 20px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.25);
+  background-color: rgb(35, 139, 243);
+  overflow: hidden;
+}
+
+.player {
+  flex: 50%;
+  font-weight: 400;
+  padding: 7rem 0;
+}
+
+.player,
+.player .bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.player .top {
+  display: grid;
+  gap: 1.5rem;
+  margin-bottom: 6rem;
+}
+
+.player .name {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.player.active {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.player.active .name {
+  font-weight: 600;
+}
+
+.player .total-score {
+  font-size: 5rem;
+  color: #062e72;
+}
+
+.player .bottom {
+  width: 13rem;
+  height: 7.5rem;
+  background-color: blue;
+  border-radius: 10px;
+  justify-content: center;
+  gap: 0.8rem;
+  color: #fff;
+}
+
+.player .bottom h3 {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.player .bottom .current-score {
+  font-size: 2.2rem;
+}
+
+.position {
+  position: absolute;
+}
+
+.btn {
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 0.5rem 1.5rem;
+  box-shadow: 0 1.75rem 3.5rem rgba(0, 0, 0, 0.1);
+  border-radius: 50px;
+  border: none;
+  font-weight: 400;
+  font-family: inherit;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn:active {
+  transform: translateY(5%);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.btn span {
+  font-size: 1.5rem;
+}
+
+.new-game {
+  top: 2.5rem;
+}
+
+.roll-dice {
+  bottom: 10.5rem;
+}
+
+.hold {
+  bottom: 6.2rem;
+}
+
+img {
+  top: 10rem;
+  width: 6.4rem;
+  height: 6.4rem;
+  box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.2);
+}
+
+img.hidden {
+  visibility: hidden;
+}
+
+.winner {
+  background-color: #2f2f2f;
+}
+
+.winner .name {
+  color: #c7365f;
+  font-weight: 700;
+}
+
+.winner .total-score {
+  color: #fff;
+  font-family: cursive;
+}
